@@ -1,0 +1,71 @@
+/*Estilos*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ body {
+    background-color: gainsboro;
+    font-size: 16px;
+    color: #474747
+ }
+ div {
+    border-radius: 4px;
+    box-sizing:  border-box;
+ }
+ .azul {
+    background-color: #0099d4;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+ }
+ .amarillo {
+    background-color: #f9c46b;
+    width: 59%;
+    padding: 20px;
+    margin: 5px 0;
+    display: inline-block;
+ }
+ .rosa {
+    background-color: #f782c2;
+    width: 39%;
+    padding: 20px;
+    margin: 5px 0;
+    display: inline-block;
+ }
+ .verde {
+    background-color: #27d5a7;
+    width: 100%;
+    padding: 20px;
+    margin: 5px 0;
+    display: inline-block;
+ }
+ img {
+    width: 100%;
+    height: auto;
+ }
+ h1, h2, h3, h4, h5, h6 {
+    text-align: left;
+ }
+ /* Propiedades flex */
+ .fila {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+ }
+
+/*Comienzan los media queries */
+/* 320px-720px-1024px-1400px*/
+@media screen and (max-width:720px) {
+    .amarillo {
+        width: 100%;
+    }
+    img {
+        width: 60%;
+        margin: 0 auto;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+    
+}
